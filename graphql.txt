@@ -1,0 +1,89 @@
+*****Projects*****
+
+{
+  projects{
+  name,
+  description,
+  client{
+    name,
+    email
+      }  
+  }
+}
+
+{
+  project(id: ""){
+    id
+    name
+    status
+    createdAt
+    client{
+      name
+      phone
+    }
+  }
+}
+
+mutation {
+  addProject(   
+    name: "Mobile App",
+    description: "Expense Tracker Mobile App for the chemical solutions.",
+    status: new,
+    clientId: "65d47bf06e2486f64941b328"
+    ){
+    
+    id
+    name,
+    description,
+    status
+    
+  }
+}
+
+mutation{
+  updateProject(id:"65d483c9c49ae45f473aa43c", description:"Adding Stripe functionality in business website using Python Backend."){
+    name,
+    description,
+    status
+  }
+}
+
+mutation {
+  deleteProject(id: ""){   
+    name, 
+  }
+}
+
+
+
+
+*****Client*****
+
+{
+  clients{
+    name
+    email
+    phone 
+  }
+}
+
+{
+  client(email:"nimraiqbal@gmail.com"){
+    name email phone
+  }
+}
+
+mutation {
+  addClient(name: "Suleman Iqbal", email: "sulemaniqbal@gmail.com", phone: "922-555-7876") {
+    id
+    name
+    email
+    phone
+  }
+}
+
+mutation {
+  deleteClient(id:"") {
+  name
+  }
+}
