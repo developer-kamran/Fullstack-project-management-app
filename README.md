@@ -52,7 +52,6 @@ This application is designed to manage clients and projects efficiently. It prov
    
 ## Configuration
 
-- **Admin Credentials**: Use the username `admin` and password `admin123` to log in as an admin. Do not change the `HASHED_ADMIN_PASSWORD` env variable.
 - **Database**: Set up your MongoDB connection using `MONGO_URI` in the `.env` file.
 - **GraphQL Endpoint**: The GraphQL API is served at `/graphql` by default.
 
