@@ -45,8 +45,6 @@ This application is designed to manage clients and projects efficiently. It prov
    ```bash
    npm run dev
 
-
-
 5. Run the development server:
 
    ```bash
